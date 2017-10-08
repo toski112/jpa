@@ -11,6 +11,7 @@ public class Main{
         bookDao.save(book);
         System.out.println("Saved books");
         System.out.println("asdasdasd");
+        System.out.println("asdasd");
         bookDao.cleanUp();
     }
 }
