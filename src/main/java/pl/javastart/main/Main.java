@@ -10,6 +10,7 @@ public class Main{
         BookDao bookDao = new BookDaoImpl();
         bookDao.save(book);
         System.out.println("Saved books");
+        System.out.println("asdasdasd");
         bookDao.cleanUp();
     }
 }
