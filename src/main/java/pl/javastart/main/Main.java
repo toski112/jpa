@@ -12,6 +12,9 @@ public class Main{
         System.out.println("Saved books");
         System.out.println("asdasdasd");
         System.out.println("asdasd");
+        System.out.println(bookDao.get(book.getId()));
+        bookDao.delete((long) 1);
+        System.out.println(bookDao.get(book.getId()));
         bookDao.cleanUp();
     }
 }

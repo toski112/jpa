@@ -32,9 +32,18 @@ public class BookDaoImpl implements BookDao{
         return book;
     }
 
+
     @Override
     public void cleanUp() {
         entityManager.close();
         emFactory.close();
+    }
+
+    @Override
+    public Book delete(Long id) {
+        Book book = entityManager.find(Book.class, id);
+        entityManager.remove(book);
+
+        return book;
     }
 }
